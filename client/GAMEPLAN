@@ -26,4 +26,9 @@ src
          - Journaling 
          - Footer component
         About.js
+
+
+
+FUTURE DEVELOPMENT
+ - create tags that can be added on the journal entries so the user can call on a tag and all journal entries with that tag pulled up
         
