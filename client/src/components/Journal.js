@@ -11,7 +11,7 @@ function journalContainer(){
 
   return(
     <div>
-      {entries.map(entry =>  (<Journal key={entry.userId} {...entry}/> ))}
+      {/* {entries.map(entry =>  (<Journal key={entry.userId} {...entry}/> ))} */}
     </div>
   )
 }
