@@ -1,21 +1,6 @@
 // import React from "react"
 // import Card from "react-bootstrap/Card"
 
-<<<<<<< HEAD
-function Journal(props){
-  return(
-    <Card>
-      {/* this is where we will recieve the data for the cards */}
-      <Card.Title>{props.title}</Card.Title>  
-      <Card.Title>{props.date}</Card.Title>
-      <Card.Text>{props.content}</Card.Text>
-    </Card>
-  )
-}
-// cool! 1pm works for me:)
-export default Journal
-// Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
-=======
 // function Journal(props){
 //   return(
 //     <Card>
@@ -29,7 +14,6 @@ export default Journal
 
 // export default Journal
 // // Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
->>>>>>> main
 
 // // import React from "react";
 // import "./App.css";
