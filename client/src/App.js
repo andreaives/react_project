@@ -1,7 +1,14 @@
 import React, {useContext, useState} from "react";
+<<<<<<< HEAD
 import Navbar from "./components/Navbar.js"
+=======
+// import Navbar from "./components/Navbar"
+>>>>>>> main
 import UserContext from "./utils/userContext.js"
 import JournalContainer from "./components/Journal.js"
+import LoginButton from './components/LoginButton'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import Col from "react-bootsrap/Col"
 
 //SOMEONE HELP ME REMEMBER RANDOM NUMBER GENERATORS
 
@@ -37,17 +44,18 @@ function App() {
   return (
     <>
     <UserContext.Provider value={userState}>
-    <Navbar />
+    {/* <Navbar /> */}
     {/* This div only renders once someone is logged in */}
     <div className="mainBody">
-      <Col className="UserSide"></Col>
+      {/* <Col className="UserSide"></Col>
       <Col className="JournalSide">
         <JournalContainer />
-      </Col>
+      </Col> */}
     </div>
+    <LoginButton/>
     {/* This div displays on default page load or on signout */}
     <div>
-      <LOGIN></LOGIN>
+      {/* <LOGIN></LOGIN> */}
     </div>
     </UserContext.Provider>
     </>
