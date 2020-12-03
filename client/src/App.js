@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar.js"
 import UserContext from "./utils/userContext.js"
 import JournalContainer from "./components/Journal.js"
 
