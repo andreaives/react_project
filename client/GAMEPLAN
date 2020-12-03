@@ -6,6 +6,7 @@ public
 src
     >components (reusable across pages)
         Navbar.js 
+         - include title
         Banner.js (Hero/header)
         Selectors
             * build logic behind the selector functionality to be reused across all selectors
@@ -25,7 +26,11 @@ src
          - build selectors in here utilizing the Selector component
          - Journaling 
          - Footer component
-        About.js
+        Resources.js
+         - Navbar component
+         - *resources content - unique, not reusing components*
+         - Footer component
+
 
 
 

@@ -11,7 +11,7 @@ export const DreamJournal = () => {
                 {dreamData.map((data, key) => {
                     return (
                         <div key={key}>
-                            <Employee
+                            <Dream
                                 key={key}
                                 title={data.title}
                                 userId={data.userId}
