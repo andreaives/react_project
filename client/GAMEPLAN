@@ -1,0 +1,29 @@
+public
+    >assets
+        images
+        data
+
+src
+    >components (reusable across pages)
+        Navbar.js 
+        Banner.js (Hero/header)
+        Selectors
+            * build logic behind the selector functionality to be reused across all selectors
+        Footer.js 
+        Aztro.js
+            * horoscope 
+        Journal.js
+            * build logic behind the journaling functionality to be reused across all journal entry sections (Dream Journal)
+        >journals
+            Dream.js
+                * this is where we'll build the functionality for the dream journal section using the Journal.js component
+    >pages 
+        Login.js
+        CreateAccount.js
+        Main.js
+         - Navbar component
+         - build selectors in here utilizing the Selector component
+         - Journaling 
+         - Footer component
+        About.js
+        
