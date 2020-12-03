@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./App.css";
-import { dreamData } from "./data";
+import { dreamData } from "./dreamData";
 
 export const DreamJournal = () => {
     return (
