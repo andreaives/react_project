@@ -30,13 +30,8 @@ export function Journal(props){
   )
 }
 
-<<<<<<< HEAD
-
-
-=======
 // Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
 export default JournalContainer;
->>>>>>> main
 
 
 // export const Journal = () => {
