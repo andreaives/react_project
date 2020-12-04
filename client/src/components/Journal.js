@@ -19,9 +19,10 @@ export function JournalContainer(){
 }
 
 
+
 export function Journal(props){
   return(
-    <Card>
+    <Card className="journalCard">
       {/* this is where we will recieve the data for the cards */}
       <Card.Title>{props.title}</Card.Title>
       <Card.Title>{props.date}</Card.Title>
