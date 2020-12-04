@@ -7,7 +7,7 @@ import React, { useContext } from "react"
 import Card from "react-bootstrap/Card"
 import { journalData } from "../scripts/journalData"
 
-export function journalContainer(){
+export function JournalContainer(){
   // const {entries} = useContext(UserContext)
   let entries = journalData
 
@@ -31,7 +31,7 @@ export function Journal(props){
 }
 
 // Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
-
+export default JournalContainer;
 
 
 // export const Journal = () => {
