@@ -12,7 +12,7 @@ src
             * build logic behind the selector functionality to be reused across all selectors
         Footer.js 
         Aztro.js
-            * horoscope 
+            * horoscope {"input": }
         Journal.js
             * build logic behind the journaling functionality to be reused across all journal entry sections (Dream Journal)
         >journals
