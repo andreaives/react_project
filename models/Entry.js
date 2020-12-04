@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const entrySchema = new Schema({
   title: { type: String, required: true },
   userId: { type: String, required: true },
-  content: String,
+  content: { String },
   date: { type: Date, default: Date.now }
 });
 
@@ -20,7 +20,7 @@ module.exports = Entry;
 // should i start laying out the screen? ill keep my screen shared while i do the bootstrap stuff
 // some thoughts while we wait
 // we really only need to set user to state
-// itll just bring all that user's records
+// it'll just bring all that user's records
 // and we are rendering them right there
 
 // so should we make some mock db entries, and then we can get the entries to render on the page.

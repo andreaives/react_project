@@ -1,4 +1,4 @@
- export const jobSeeds = [
+export const jobSeeds = [
     {
         job: "Snake Milker",
         salary: "$20,000 a year",
