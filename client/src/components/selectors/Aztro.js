@@ -38,7 +38,7 @@ class Aztro extends Component {
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Pisces")}>♓ Pisces</button> 
               </div>
             </div>
-          <p className="lead">Click on the button to see today's horroscope for each sign.  </p>
+          <p className="lead">Click on the button to see today's horoscope for each sign.  </p>
           <h2>{this.astroSign}</h2>
           <p>Birthday Between: {this.state.json.date_range} </p>
           <p>Today's Horoscope: {this.state.json.current_date},<br/> {this.state.json.description} </p>
