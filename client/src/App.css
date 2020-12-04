@@ -10,3 +10,7 @@ Orange: rgb (254, 156, 127) */
 background-color: rgb (255, 193, 160, 25);
 }
  */
+.journalCard {
+    background-color: rgb(0, 0, 0, 0);
+    color: #fe9c7f;
+}
