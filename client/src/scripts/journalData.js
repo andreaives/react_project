@@ -1,6 +1,6 @@
-// dummy data for dream data
+// dummy data for data
 
-export const dreamData =
+export const journalData =
 
     [
         {
