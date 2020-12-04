@@ -1,0 +1,27 @@
+.signOut{
+  float: right
+}
+.navbar{
+  background-color:  #280f36;
+  padding: 5
+}
+.homepage{
+  color: #fe9c7f;
+  font-size: 25px;
+  padding-left: 0;
+}
+.profile{
+  color: #fe9c7f;
+  font-size: 20px;
+  padding-left: 0;
+  margin: 10px
+}
+.journal{
+  color: #fe9c7f;
+  font-size: 20px;
+  padding-left: 0;
+}
+.links{
+  margin: 0;
+  padding: 0
+}
