@@ -1,7 +1,7 @@
 import React, {useContext, useState} from "react";
 import Navbar from "./components/navbar/Navbar.js"
 import UserContext from "./utils/userContext.js"
-import JournalContainer from "./components/Journal.js"
+import JournalContainer, { journalContainer } from "./components/Journal.js"
 import LoginButton from './components/LoginButton'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -18,7 +18,7 @@ function App() {
   // gotta make sure he can hear me
   function RandomJob(){
     const jobNum = Math.floor(Math.random() * 10)
-   
+    
     //set it to state
   }
   function RandomRelationship(){
@@ -31,10 +31,10 @@ function App() {
     
      //set it to state
   }
-  function getJournal(){
-     //retrieve entries assigned to a user based on the userID variable in state
-     //set state variable entries to the array of entries recieved back
-  }
+  // function getJournal(){
+  //    //retrieve entries assigned to a user based on the userID variable in state
+  //    //set state variable entries to the array of entries recieved back
+  // }
   return (
     <>
     <UserContext.Provider value={userState}>
@@ -52,6 +52,7 @@ function App() {
       {/* <LOGIN></LOGIN> */}
     </div>
     </UserContext.Provider>
+    <JournalContainer />
     </>
   )
 }
