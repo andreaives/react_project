@@ -22,7 +22,7 @@ export function journalContainer(){
 export function Journal(props){
   return(
     <Card>
-      {/* this is where we will recieve the data for the cards */}
+      {/* this is where we will receive the data for the cards */}
       <Card.Title>{props.title}</Card.Title>
       <Card.Title>{props.date}</Card.Title>
       <Card.Text>{props.content}</Card.Text>
@@ -30,7 +30,7 @@ export function Journal(props){
   )
 }
 
-// Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
+
 
 
 
