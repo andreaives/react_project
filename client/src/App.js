@@ -4,6 +4,7 @@ import UserContext from "./utils/userContext.js"
 import JournalContainer, { journalContainer } from "./components/Journal.js"
 import LoginButton from './components/LoginButton'
 import "./App.scss"
+import "./App.css"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -40,16 +41,17 @@ function App() {
   return (
     <>
     <UserContext.Provider value={userState}>
-    <Navbar />
     {/* This div only renders once someone is logged in */}
     
     <div className="mainBody">
+    <Navbar />
     <LoginButton/>
     <div id="stars"></div>
     <div id="stars2"> </div>
     <div id="stars3"> </div>
     <div id="title"></div>
     
+    <JournalContainer />
       {/* <Col className="UserSide"></Col>
       <Col className="JournalSide">
         <JournalContainer />
@@ -61,7 +63,6 @@ function App() {
       {/* <LOGIN></LOGIN> */}
     </div>
     </UserContext.Provider>
-    <JournalContainer />
 
     </>
   )
