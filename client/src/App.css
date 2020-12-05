@@ -1,3 +1,15 @@
+/* CURRENT COLOR SCHEME:
+Dark Purple: rgb (40, 15, 45) 
+Purple: rgb (90, 43, 108)
+Pink: rgb (200, 107, 152)
+Salmon: rgb (240, 159, 156)
+Beige: rgb (255, 193, 160)
+Orange: rgb (254, 156, 127) */
+
+/* .JournalContainer {
+background-color: rgb (255, 193, 160, 25);
+}
+ */
 .journalCard {
     background-color: rgb(0, 0, 0, 0);
     color: #fe9c7f;
