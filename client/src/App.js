@@ -1,10 +1,8 @@
 import React, {useContext, useState} from "react";
-import Navbar from "./components/navbar/Navbar.js"
 import UserContext from "./utils/userContext.js"
-import JournalContainer, { journalContainer } from "./components/Journal.js"
-import LoginButton from './components/LoginButton'
 import "./App.scss"
 import "./App.css"
+import Main from "./pages/Main.js";
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -44,20 +42,12 @@ function App() {
     {/* This div only renders once someone is logged in */}
     
     <div className="mainBody">
-    <Navbar />
-    <LoginButton/>
     <div id="stars"></div>
     <div id="stars2"> </div>
     <div id="stars3"> </div>
     <div id="title"></div>
     
-    <JournalContainer />
-      {/* <Col className="UserSide"></Col>
-      <Col className="JournalSide">
-        <JournalContainer />
-      </Col> */}
-    {/* </div> */}
-    
+    <Main />
     {/* This div displays on default page load or on signout */}
     {/* <div> */}
       {/* <LOGIN></LOGIN> */}
