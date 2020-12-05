@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
 import "./navbar.css"
+import LoginButton from "../LoginButton";
 
 function Navigation() {
   return (
@@ -19,6 +20,7 @@ function Navigation() {
               <a className="journal" href="/journal">Journal</a>
             </Col>
             <Col >
+              <LoginButton />
               <Button className="signOut">SIGN OUT</Button>
             </Col>
       </Navbar>

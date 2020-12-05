@@ -23,15 +23,21 @@ class Aztro extends Component {
         <div className="jumbotron">
           <h1 className="display-4">Daily Horoscope</h1>
             <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-              <div className="btn-group mr-2" role="group" aria-label="Button group">
+              <div className="btn-group mr-2" role="group" aria-label="Button group 1">
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Aries")}>♈ Aries</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Taurus")}>♉ Taurus</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Gemini")}>♊ Gemini</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Cancer")}>♋ Cancer</button>
+              </div>
+              <br />
+              <div className="btn-group mr-2" role="group" aria-label="Button group 2">
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Leo")}>♌ Leo</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Virgo")}>♍ Virgo</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Libra")}>♎ Libra</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Scorpio")}>♏ Scorpio</button> 
+              </div>
+              <br />
+              <div className="btn-group mr-2" role="group" aria-label="Button group 3">
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Sagittarius")}>♐ Sagittarius</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Capricorn")}>♑ Capricorn</button>
                 <button type="button" className="btn btn-secondary" onClick={() => this.fetchScope("Aquarius")}>♒ Aquarius</button>
