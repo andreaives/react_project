@@ -12,8 +12,8 @@ class Main extends Component {
         <Navbar />
         <div className="container-fluid">
           <div className="row">
-            <div className="col-1" />
-            <div className="col-4">
+            <div className="col-sm-.5 col-md-1 col-lg-2" />
+            <div className="col-sm-11 col-md-4 col-lg-4">
               <Aztro />
               <br />
               <br />
@@ -24,12 +24,12 @@ class Main extends Component {
                 dreams, and feelings.
               </p>
             </div>
-            <div className="col-2" />
-            <div className="col-4">
+            <div className="col-sm-0 col-md-2 col-lg-2" />
+            <div className="col-sm-.5 col-md-4 col-lg-4">
               <h1 className="display-4">Daily Journal</h1>
               <JournalContainer />
             </div>
-            <div className="col-1" />
+            <div className="col-sm-.5 col-md-1 col-lg-2" />
           </div>
         </div>
         <Footer />
