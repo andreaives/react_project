@@ -3,6 +3,7 @@
 }
 .navbar {
   background-color: #280f36;
+  opacity: 0.6;
   padding: 5;
 }
 .homepage {
