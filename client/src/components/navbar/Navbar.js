@@ -13,8 +13,9 @@ function Navigation() {
     <Container fluid="true">
       <Navbar className="navbar">
         <Col className="links">
+          <div className="col-2" />
           <a className="homepage" href="/">
-            LITERALLY A HOMEPAGE
+            CELESTIAL NAVIGATOR
           </a>
           <a className="profile" href="/profile">
             Profile
