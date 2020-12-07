@@ -1,10 +1,12 @@
 import React, {useContext, useState} from "react";
+import axios from 'axios';
 import UserContext from "./utils/userContext.js"
 import "./App.scss"
 import "./App.css"
 import Main from "./pages/Main.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Profile from "./pages/Profile.js"
+import JournalPage from "./pages/Journal.js"
 import CreateAccount from "./pages/CreateAccount"
 import API from "./utils/API.js";
 import Login from "./pages/Login"
@@ -49,6 +51,7 @@ function App() {
     <Route exact path="/" component = { Login } />
     <Route exact path="/main" component = { Main } />
     <Route exact path="/profile" component = { Profile } />
+    <Route exact path="/journal" component = { JournalPage } />
     <Route exact path="/edit" component = { CreateAccount } />
     </div> 
     </Router>
