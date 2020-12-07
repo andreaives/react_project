@@ -36,6 +36,14 @@ function App() {
   //    //retrieve entries assigned to a user based on the userID variable in state
   //    //set state variable entries to the array of entries recieved back
   // }
+//this is required to run the submit form page as a pop up module.
+  const triggerText = 'Open Form';
+    const onSubmit = (event) => {
+    event.preventDefault(event);
+    //consloe logs our respose now. needs to connect to backend...
+    console.log(event.target.title.value);
+    console.log(event.target.entry.value);
+ };
   return (
     <>
     <UserContext.Provider value={userState}>
@@ -47,8 +55,8 @@ function App() {
     <div id="stars3"> </div>
     <div id="title"></div>
     
-    <Main />
-    {/* This div displays on default page load or on signout */}
+    <Main triggerText={triggerText} onSubmit={onSubmit} />  
+    {/* This div displays on default page load or on signout , trigger text and on submit text */}
     {/* <div> */}
       {/* <LOGIN></LOGIN> */}
     </div>
