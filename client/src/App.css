@@ -49,7 +49,6 @@ background-color: rgb (255, 193, 160, 0);
   overflow-y: scroll;
   height: 700px
 }
-<<<<<<< HEAD
 
 h1,
 h2 {
@@ -62,11 +61,3 @@ li,
 .lead {
   font-size: 24px;
 }
-=======
-.profileContainer{
-  text-align: center;
-}
-.editAccount{
-  color: white
-}
->>>>>>> main
