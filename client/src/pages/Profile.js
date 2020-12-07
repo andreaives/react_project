@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Button from "react-bootstrap/Button"
 import CreateAccount from "./CreateAccount.js"
 import AuthProfile from "../components/profile/AuthProfile"
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Profile() {
   return(
