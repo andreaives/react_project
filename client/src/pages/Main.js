@@ -24,9 +24,11 @@ class Main extends Component {
               </p>
             </div>
             <div className="col-sm-0 col-md-2 col-lg-2" />
-            <div className="col-sm-.5 col-md-4 col-lg-4 journalScroll">
-              <h1 className="display-4">Daily Journal</h1>
-              <JournalContainer />
+            <div className="col-sm-.5 col-md-4 col-lg-4">
+              <div className="scrollHeader">
+                <h1 className="display-4">Daily Journal</h1>
+                <JournalContainer />
+              </div>
             </div>
             <div className="col-sm-.5 col-md-1 col-lg-2" />
           </div>
