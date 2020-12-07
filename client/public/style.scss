@@ -1,12 +1,16 @@
-html,
-.mainBody {
+html {
   height: 100%;
+<<<<<<< HEAD
   // overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+=======
+  overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+>>>>>>> main
 }
 
 #title {
-  position: absolute;
+  // position: absolute;
   top: 50%;
   left: 0;
   right: 0;
@@ -20,11 +24,11 @@ html,
   padding-left: 10px;
 }
 
-// #title span {
-//   background: -webkit-linear-gradient(white, #38495a);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #stars {
   width: 1px;
@@ -211,7 +215,11 @@ html,
 }
 
 #stars:after {
+<<<<<<< HEAD
+  content: '';
+=======
   content: "";
+>>>>>>> main
   // position: absolute;
   top: 2000px;
   width: 1px;
@@ -455,7 +463,11 @@ html,
 }
 
 #stars2:after {
+<<<<<<< HEAD
+  content: '';
+=======
   content: "";
+>>>>>>> main
   // position: absolute;
   top: 2000px;
   width: 2px;
@@ -548,7 +560,11 @@ html,
 }
 
 #stars3:after {
+<<<<<<< HEAD
+  content: '';
+=======
   content: "";
+>>>>>>> main
   // position: absolute;
   top: 2000px;
   width: 3px;

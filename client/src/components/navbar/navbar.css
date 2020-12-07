@@ -1,27 +1,41 @@
-.signOut{
-  float: right
+.floatRight {
+  float: right;
+  width: 97.23px;
+  height: 38px;
+  background-color: #e74742;
+  color: white;
+  margin: 2px
 }
-.navbar{
-  background-color:  #280f36;
-  padding: 5
+.btn{
+  background-color: #e74742;
+  color: white;
+  margin: 2px
 }
-.homepage{
+.navbar {
+  background-color: #280f36;
+  opacity: 0.8;
+  padding: 5;
+}
+.homepage {
   color: #fe9c7f;
   font-size: 25px;
   padding-left: 0;
+  font: Garamond;
 }
-.profile{
+.profile {
   color: #fe9c7f;
   font-size: 20px;
   padding-left: 0;
-  margin: 10px
+  margin: 10px;
+  font: Garamond;
 }
-.journal{
+.journal {
   color: #fe9c7f;
   font-size: 20px;
   padding-left: 0;
+  font: Garamond;
 }
-.links{
+.links {
   margin: 0;
-  padding: 0
+  padding: 0;
 }

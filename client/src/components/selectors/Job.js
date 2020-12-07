@@ -6,19 +6,41 @@ import {
     Card,
     CardBody,
     CardTitle,
+    CardImg
   } from "reactstrap";
   import { jobSeeds } from "../../scripts/jobSeedDB";
 
 function job(){
+
+    const Style = {
+        title: {
+          textAlign: "center",
+          fontSize: "30px"
+        },
+        basicColors: {
+          backgroundColor: "#280f36",
+          color: "#fe9c7f",
+          opacity: "0.9"
+        },
+        bodyStyle: {
+          textAlign: "center"
+        },
+        imageStyle: {
+            height: "50%",
+            width: "50%",
+            margin: "auto",
+          }
+      };
 
     const randomNumber = Math.floor(Math.random() * 7) + 1
     return (
         <Container>
             <Row>
                 <Col>
-                    <Card>
-                        <CardTitle>Your 2021 Job</CardTitle>
-                        <CardBody> 
+                    <Card style={Style.basicColors}>
+                        <CardTitle style={Style.title}>Your 2021 Job</CardTitle>
+                        <CardImg src={ jobSeeds[randomNumber].image} style={Style.imageStyle}></CardImg>
+                        <CardBody style={Style.bodyStyle}> 
                             { jobSeeds[randomNumber].job}
                             <br/>
                             { jobSeeds[randomNumber].salary}
