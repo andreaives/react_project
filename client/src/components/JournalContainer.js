@@ -4,10 +4,11 @@
 // then we use that array of entries to map over and render out a card for each entry
 import React, { useContext } from "react";
 // import UserContext from "../utils/userContext"
-import Card from "react-bootstrap/Card";
-import { journalData } from "../scripts/journalData";
+import Card from "react-bootstrap/Card"
+import { journalData } from "../scripts/journalData"
+import Journal from './Journal/Journal'
 
-export function JournalContainer() {
+function JournalContainer(){
   // const {entries} = useContext(UserContext)
   let entries = journalData;
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer";
-import JournalContainer from "../components/Journal";
+import JournalContainer from "../components/Journal/Journal";
 import Aztro from "../components/selectors/Aztro";
 
 class Main extends Component {
