@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "./navbar.css";
-import LoginButton from "../LoginButton";
+import LogoutButton from "../logoutButton/LogoutButton";
 
 function Navigation() {
   return (
@@ -23,7 +23,7 @@ function Navigation() {
           </a>
         </Col>
         <Col>
-          <Button className="floatRight">SIGN OUT</Button>
+          <LogoutButton />
         </Col>
       </Navbar>
     </Container>
