@@ -12,7 +12,7 @@ export function JournalContainer() {
   let entries = journalData;
 
   return (
-    <div>
+    <div className="journalScroll">
       {entries.map((entry) => (
         <Journal key={entry.userId} {...entry} />
       ))}

@@ -25,8 +25,8 @@ function Navigation() {
           </a>
         </Col>
         <Col>
-          <LoginButton />
-          <Button className="signOut">SIGN OUT</Button>
+          <LoginButton className="floatRight" />
+          <Button className="floatRight">SIGN OUT</Button>
         </Col>
       </Navbar>
     </Container>
