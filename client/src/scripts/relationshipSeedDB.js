@@ -12,6 +12,6 @@
         status: "Married to a parrot"
     }, {
         status: "Stuck as Gary's maid",
-        image: "./images/Screen Shot 2020-11-24 at 11.36.23 AM.png"
+        image: "https://pbs.twimg.com/profile_images/997181593667100672/2h00HCwl_400x400.jpg"
     }
 ]
