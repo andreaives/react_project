@@ -1,0 +1,10 @@
+.login {
+  color: #ffc1a0;
+  background-color: #280f36;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 50px auto;
+  padding: 50px;
+  cursor: pointer;
+}
