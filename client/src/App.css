@@ -7,7 +7,7 @@ Beige: rgb (255, 193, 160)
 Orange: rgb (254, 156, 127) */
 
 .JournalContainer {
-background-color: rgb (255, 193, 160, 25);
+background-color: rgb (255, 193, 160, 0);
 }
 
 .journalCard {
@@ -20,9 +20,12 @@ background-color: rgb (255, 193, 160, 25);
 .container-fluid {
   color: #fe9c7f;
   padding: 50px;
-  height: 100vh
 }
-
+.scrollHeader{
+  position: sticky;
+  top: 0;
+  width: 100%
+}
 .btn-btn-secondary {
   background-color: transparent;
   border-color: transparent;
