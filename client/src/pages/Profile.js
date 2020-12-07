@@ -7,7 +7,6 @@ import CreateAccount from "./CreateAccount.js"
 function Profile() {
   return(
     <>
-      <Navbar />
       <div className="profileContainer container-fluid">
         <h1>TEST PROFILE</h1>
         <h2>I predict your email is: text@test.com</h2>
