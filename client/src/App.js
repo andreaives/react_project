@@ -1,7 +1,7 @@
 import React, {useContext, useState} from "react";
 import Navbar from "./components/navbar/Navbar.js"
 import UserContext from "./utils/userContext.js"
-import JournalContainer, { journalContainer } from "./components/Journal.js"
+import JournalContainer, { journalContainer } from "./components/JournalContainer.js"
 import LoginButton from './components/loginButton/LoginButton'
 import "./App.scss"
 

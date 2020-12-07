@@ -13,7 +13,7 @@ function Navigation() {
       <Navbar className="navbar">
             <Col className="links">
               <a className="homepage" href="/">
-                LITERALLY A HOMEPAGE
+                CELESTIAL NAVIGATOR
               </a>
               <a className="profile" href="/profile">Profile</a>
               <a className="journal" href="/journal">Journal</a>
