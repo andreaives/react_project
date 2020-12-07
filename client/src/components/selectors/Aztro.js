@@ -148,7 +148,6 @@ class Aztro extends Component {
               {this.state.json.description}{" "}
             </p>
             <ul>
-              <li>Extras</li>
               <li>
                 Compatibility: Spend some time with a{" "}
                 {this.state.json.compatibility} today.
