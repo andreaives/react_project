@@ -9,6 +9,7 @@ import CreateAccount from "./pages/CreateAccount"
 import API from "./utils/API.js";
 import Login from "./pages/Login"
 import { useAuth0 } from "@auth0/auth0-react"
+import Navbar from "./components/navbar/Navbar"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -39,7 +40,7 @@ function App() {
     <>
     <UserContext.Provider value={userState}>
     <Router>
-    
+    <Navbar/>
     <div className="mainBody">
     <div id="stars"></div>
     <div id="stars2"> </div>
