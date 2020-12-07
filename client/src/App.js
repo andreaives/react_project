@@ -57,7 +57,7 @@ function App() {
     event.preventDefault(event);
     //consloe logs our respose now. needs to connect to backend...
     console.log(event.target.title.value);
-    console.log(event.target.entry.value);
+    console.log(event.target.message.value);
  };
   return (
     
