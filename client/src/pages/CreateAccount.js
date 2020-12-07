@@ -1,12 +1,16 @@
 import React, { useContext } from "react"
 import Form from "react-bootstrap/Form"
 import userContext from "../utils/userContext.js"
+import Navbar from "../components/navbar/Navbar"
 
-function createAccount(){
+function CreateAccount(){
   const {email} = useContext(userContext)
 
   return(
-    <Form>
+    <>
+    <Navbar />
+    <div>
+    <Form className="editAccount">
       <Form.Group controlID="formEmail">
         <Form.Label>I predict your Email Address is:</Form.Label>
         <Form.Control plaintext readOnly defaultValue={email} type="email" />
@@ -70,7 +74,9 @@ function createAccount(){
         </Form.Control>
       </Form.Group>
     </Form>
+    </div>
+    </>
   )
 }
 
-export default createAccount;
+export default CreateAccount;
