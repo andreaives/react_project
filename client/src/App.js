@@ -8,6 +8,7 @@ import Profile from "./pages/Profile.js"
 import CreateAccount from "./pages/CreateAccount"
 import API from "./utils/API.js";
 import Login from "./pages/Login"
+import { useAuth0 } from "@auth0/auth0-react"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -22,39 +23,23 @@ function App() {
     userFVacation: "",
     userEntries: []
   });
-  // gotta make sure he can hear me
-  function RandomJob(){
-    const jobNum = Math.floor(Math.random() * 10)
-    
-    //set it to state
-  }
-  function RandomRelationship(){
-    const relNum = Math.floor(Math.random() * 5)
-    
-     //set it to state
-  }
-  function RandomVacation(){
-    const vacNum = Math.floor(Math.random() *30)
-    
-     //set it to state
-  }
+
+  const {user, isAuthenticated, isLoading} = useAuth0(); 
 
   function getUserState() {
     API.getUser().then(res =>{
       setUserState(res)
     })
+
+    console.log(user)
   }
 
   getUserState()
-  // function getJournal(){
-  //    //retrieve entries assigned to a user based on the userID variable in state
-  //    //set state variable entries to the array of entries recieved back
-  // }
   return (
-    
     <>
     <UserContext.Provider value={userState}>
     <Router>
+    
     <div className="mainBody">
     <div id="stars"></div>
     <div id="stars2"> </div>
@@ -69,7 +54,6 @@ function App() {
     </UserContext.Provider>
 
     </>
-   
-  )
+   )
 }
 export default App;
