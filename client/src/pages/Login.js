@@ -8,7 +8,6 @@ function LoginPage() {
 
   return(
     <>
-      <Navbar />
       <div>
       <LoginButton  />
       </div>

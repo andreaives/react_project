@@ -8,7 +8,6 @@ function CreateAccount(){
 
   return(
     <>
-    <Navbar />
     <div>
     <Form className="editAccount">
       <Form.Group controlID="formEmail">

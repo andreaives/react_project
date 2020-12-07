@@ -9,7 +9,6 @@ class Main extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-.5 col-md-1 col-lg-2" />
