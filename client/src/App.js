@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 import Navbar from "./components/navbar/Navbar.js"
 import UserContext from "./utils/userContext.js"
 import JournalContainer, { journalContainer } from "./components/Journal.js"
-import LoginButton from './components/LoginButton'
+import LoginButton from './components/loginButton/LoginButton'
 import "./App.scss"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
