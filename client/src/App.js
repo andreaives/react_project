@@ -43,13 +43,13 @@ function App() {
   //    //set state variable entries to the array of entries recieved back
   // }
 //this is required to run the submit form page as a pop up module.
-  };
   const triggerText = 'Open Form';
   const onSubmit = (event) => {
   event.preventDefault(event);
  //consloe logs our respose now. needs to connect to backend...
   console.log(event.target.title.value);
   console.log(event.target.message.value);
+  };
   return (
     <>
     <UserContext.Provider value={userState}>

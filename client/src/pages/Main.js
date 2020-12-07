@@ -53,7 +53,10 @@ class Main extends Component {
               </p>
             </div>
             <div className="col-sm-0 col-md-2 col-lg-2" />
-            <TriggerButton 
+            <div className="col-sm-.5 col-md-4 col-lg-4">
+              <div className="scrollHeader">
+                <h1 className="display-4">Daily Journal</h1>
+                <TriggerButton 
               showModal={this.showModal}
               buttonRef={(n) => (this.TriggerButton = n)}
               triggerText={this.props.triggerText}
@@ -68,9 +71,6 @@ class Main extends Component {
               onClickOutside={this.onClickOutside}
               />
             ) : null}
-            <div className="col-sm-.5 col-md-4 col-lg-4">
-              <div className="scrollHeader">
-                <h1 className="display-4">Daily Journal</h1>
                 <JournalContainer />
               </div>
             </div>
