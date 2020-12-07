@@ -1,5 +1,15 @@
 .floatRight {
   float: right;
+  width: 97.23px;
+  height: 38px;
+  background-color: #e74742;
+  color: white;
+  margin: 2px
+}
+.btn{
+  background-color: #e74742;
+  color: white;
+  margin: 2px
 }
 .navbar {
   background-color: #280f36;

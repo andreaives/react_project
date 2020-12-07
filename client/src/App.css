@@ -41,3 +41,9 @@ background-color: rgb (255, 193, 160, 25);
   overflow-x: hidden;
   overflow-y: auto;
 }
+.profileContainer{
+  text-align: center;
+}
+.editAccount{
+  color: white
+}

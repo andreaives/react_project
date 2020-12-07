@@ -3,6 +3,11 @@ import UserContext from "./utils/userContext.js"
 import "./App.scss"
 import "./App.css"
 import Main from "./pages/Main.js";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Profile from "./pages/Profile.js"
+import CreateAccount from "./pages/CreateAccount"
+import API from "./utils/API.js";
+import Login from "./pages/Login"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -10,6 +15,7 @@ import Main from "./pages/Main.js";
 function App() {
   const [userState, setUserState] = useState({
     userID: "",
+    email: "",
     userBirthday: "",
     userFJob: "",
     userFRelationship: "",
@@ -32,29 +38,38 @@ function App() {
     
      //set it to state
   }
+
+  function getUserState() {
+    API.getUser().then(res =>{
+      setUserState(res)
+    })
+  }
+
+  getUserState()
   // function getJournal(){
   //    //retrieve entries assigned to a user based on the userID variable in state
   //    //set state variable entries to the array of entries recieved back
   // }
   return (
+    
     <>
     <UserContext.Provider value={userState}>
-    {/* This div only renders once someone is logged in */}
-    
+    <Router>
     <div className="mainBody">
     <div id="stars"></div>
     <div id="stars2"> </div>
     <div id="stars3"> </div>
     <div id="title"></div>
-    
-    <Main />
-    {/* This div displays on default page load or on signout */}
-    {/* <div> */}
-      {/* <LOGIN></LOGIN> */}
-    </div>
+    <Route exact path="/" component = { Login } />
+    <Route exact path="/main" component = { Main } />
+    <Route exact path="/profile" component = { Profile } />
+    <Route exact path="/edit" component = { CreateAccount } />
+    </div> 
+    </Router>
     </UserContext.Provider>
 
     </>
+   
   )
 }
 export default App;
