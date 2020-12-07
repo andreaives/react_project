@@ -23,6 +23,23 @@ function JournalContainer(){
   );
 }
 
+<<<<<<< HEAD
+export function Journal(props) {
+  const Style = {
+    font: {
+      fontFamily: "EB Garamond, serif",
+    },
+  };
+  return (
+    <Card className="journalCard">
+      {/* this is where we will recieve the data for the cards */}
+      <Card.Title style={Style.font}>{props.title}</Card.Title>
+      <Card.Title style={Style.font}>{props.date}</Card.Title>
+      <Card.Text>{props.content}</Card.Text>
+    </Card>
+  );
+}
+=======
 // export function Journal(props) {
 //   return (
 //     <Card className="journalCard">
@@ -33,6 +50,7 @@ function JournalContainer(){
 //     </Card>
 //   );
 // }
+>>>>>>> ed0aeeda1714408053d9dccede6b4fc994958123
 
 // Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
 export default JournalContainer;

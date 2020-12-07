@@ -15,8 +15,8 @@ class Main extends Component {
             <div className="col-sm-11 col-md-4 col-lg-4">
               <Aztro />
               <br />
-              <br />
               <h2>Readings, Links, and More.</h2>
+              <br />
               <p>
                 Enjoy the links and prediction readings below to help you plan
                 your day. Use the Journal to the right to write your thoughts,
