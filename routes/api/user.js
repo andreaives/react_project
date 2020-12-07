@@ -7,9 +7,10 @@ router.route("/")
 
 
 router
-  .route("/user/:email")
+  .route("api/user/:email")
   .get(userController.findById)
   .put(userController.update)
   .delete(userController.remove);
-
+router.route("/edit")
+  .post(userController.update)
   module.exports = router;

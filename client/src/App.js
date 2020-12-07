@@ -17,25 +17,27 @@ import Navbar from "./components/navbar/Navbar"
 function App() {
   const [userState, setUserState] = useState({
     userID: "",
-    email: "",
-    userBirthday: "",
+    email: "testemail@email.com",
+    name: "TestName",
+    userBirthday: "15",
+    userBirthmonth: "July",
     userFJob: "",
     userFRelationship: "",
     userFVacation: "",
     userEntries: []
   });
 
-  const {user, isAuthenticated, isLoading} = useAuth0(); 
-
+  const {user, isAuthenticated, isLoading} = useAuth0();
+  console.log(user)
+  
   function getUserState() {
-    API.getUser().then(res =>{
+    API.getUser(user.email).then(res =>{
       setUserState(res)
+      console.log(userState)
     })
-
-    console.log(user)
   }
 
-  getUserState()
+  isAuthenticated && (getUserState() )
   return (
     <>
     <UserContext.Provider value={userState}>
@@ -55,6 +57,6 @@ function App() {
     </UserContext.Provider>
 
     </>
-   )
+  )
 }
 export default App;
