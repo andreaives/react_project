@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer";
-import JournalContainer from "../components/Journal/Journal";
+import JournalContainer from "../components/JournalContainer";
 import Aztro from "../components/selectors/Aztro";
 
 class Main extends Component {
@@ -9,7 +9,6 @@ class Main extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-.5 col-md-1 col-lg-2" />
@@ -25,7 +24,7 @@ class Main extends Component {
               </p>
             </div>
             <div className="col-sm-0 col-md-2 col-lg-2" />
-            <div className="col-sm-.5 col-md-4 col-lg-4">
+            <div className="col-sm-.5 col-md-4 col-lg-4 journalScroll">
               <h1 className="display-4">Daily Journal</h1>
               <JournalContainer />
             </div>

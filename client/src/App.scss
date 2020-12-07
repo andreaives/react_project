@@ -1,7 +1,7 @@
 html,
 .mainBody {
-  height: 100%;
-  // overflow: hidden;
+  height: 100vh;
+  // overflow: auto;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   font-family: "EB Garamond", serif;
 }
@@ -22,11 +22,11 @@ html,
   font-family: "EB Garamond", serif;
 }
 
-// #title span {
-//   background: -webkit-linear-gradient(white, #38495a);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #stars {
   width: 1px;
