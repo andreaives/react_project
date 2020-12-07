@@ -15,6 +15,8 @@ background-color: rgb (255, 193, 160, 25);
   color: #fe9c7f;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 24px;
+  font-family: "EB Garamond", serif;
 }
 
 .container-fluid {
@@ -26,6 +28,7 @@ background-color: rgb (255, 193, 160, 25);
   background-color: transparent;
   border-color: transparent;
   color: #fe9c7f;
+  font-size: 24px;
 }
 
 .navbar {
@@ -40,4 +43,16 @@ background-color: rgb (255, 193, 160, 25);
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+h1,
+h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 48px;
+}
+
+p,
+li,
+.lead {
+  font-size: 24px;
 }

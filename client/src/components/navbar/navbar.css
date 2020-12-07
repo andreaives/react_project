@@ -3,27 +3,28 @@
 }
 .navbar {
   background-color: #280f36;
-  opacity: 0.6;
+  opacity: 0.8;
   padding: 5;
 }
 .homepage {
   color: #fe9c7f;
   font-size: 25px;
   padding-left: 0;
-  font: Garamond;
+  font-family: "EB Garamond", serif;
+  font-size: 36px;
 }
 .profile {
   color: #fe9c7f;
   font-size: 20px;
   padding-left: 0;
   margin: 10px;
-  font: Garamond;
+  font-family: "EB Garamond", serif;
 }
 .journal {
   color: #fe9c7f;
   font-size: 20px;
   padding-left: 0;
-  font: Garamond;
+  font-family: "EB Garamond", serif;
 }
 .links {
   margin: 0;
