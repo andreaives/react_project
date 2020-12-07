@@ -3,10 +3,12 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer";
 import Button from "react-bootstrap/Button"
 import CreateAccount from "./CreateAccount.js"
+import AuthProfile from "../components/profile/AuthProfile"
 
 function Profile() {
   return(
     <>
+      <AuthProfile />
       <div className="profileContainer container-fluid">
         <h1>TEST PROFILE</h1>
         <h2>I predict your email is: text@test.com</h2>
