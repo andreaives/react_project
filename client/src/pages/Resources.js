@@ -32,3 +32,4 @@ class Resources extends Component {
 // examples: 
 // - human body graph
 export default Resources;
+

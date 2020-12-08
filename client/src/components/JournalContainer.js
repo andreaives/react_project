@@ -34,24 +34,3 @@ export function Journal(props) {
 // Dream Journal component im accepting both for now, im notreally using the top part so it can all be changed if we need to
 export default JournalContainer;
 
-// export const Journal = () => {
-//     return (
-//         <>
-//             <div className="entry-container">
-//                 {journalData.map((data, key) => {
-//                     return (
-//                         <div key={key}>
-//                             <Journal
-//                                 key={key}
-//                                 title={data.title}
-//                                 userId={data.userId}
-//                                 content={data.content}
-//                                 date={data.date}
-//                             />
-//                         </div>
-//                     )
-//                 })}
-//             </div>
-//         </>
-//     );
-// };
