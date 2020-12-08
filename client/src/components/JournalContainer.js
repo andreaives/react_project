@@ -4,35 +4,28 @@
 // then we use that array of entries to map over and render out a card for each entry
 import React, { useContext } from "react";
 // import UserContext from "../utils/userContext"
-import Card from "react-bootstrap/Card"
-import { journalData } from "../scripts/journalData.js"
+import Card from "react-bootstrap/Card";
+import { journalData } from "../scripts/journalData.js";
 
-function JournalContainer(){
+function JournalContainer() {
   // const {entries} = useContext(UserContext)
   let entries = journalData;
 
   return (
     <div className="journalScroll">
-      {
-      entries.map((entry) => (
+      {entries.map((entry) => (
         <Journal key={entry.userId} {...entry} />
-      ))
-      }
+      ))}
     </div>
   );
 }
 
 export function Journal(props) {
-  const Style = {
-    font: {
-      fontFamily: "EB Garamond, serif",
-    },
-  };
   return (
     <Card className="journalCard">
       {/* this is where we will recieve the data for the cards */}
-      <Card.Title style={Style.font}>{props.title}</Card.Title>
-      <Card.Title style={Style.font}>{props.date}</Card.Title>
+      <Card.Title>{props.title}</Card.Title>
+      <Card.Title>{props.date}</Card.Title>
       <Card.Text>{props.content}</Card.Text>
     </Card>
   );
