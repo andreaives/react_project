@@ -21,6 +21,9 @@ function Navigation() {
           <a className="journal" href="/journal">
             Journal
           </a>
+          <a className="resources" href="/resources">
+            Resources
+          </a>
         </Col>
         <Col>
           <LogoutButton />
