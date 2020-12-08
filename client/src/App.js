@@ -40,7 +40,9 @@ function App() {
 
   }
 
+
   // getUserState()
+
   // function getJournal(){
   //    //retrieve entries assigned to a user based on the userID variable in state
   //    //set state variable entries to the array of entries recieved back
