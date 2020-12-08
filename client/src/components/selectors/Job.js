@@ -15,7 +15,8 @@ function job(){
     const Style = {
         title: {
           textAlign: "center",
-          fontSize: "30px"
+          fontSize: "25px",
+          // paddingLeft: "15px"
         },
         basicColors: {
           backgroundColor: "#280f36",
@@ -23,7 +24,8 @@ function job(){
           opacity: "0.9"
         },
         bodyStyle: {
-          textAlign: "center"
+          textAlign: "center",
+          fontSize: "20px"
         },
         imageStyle: {
             height: "50%",
