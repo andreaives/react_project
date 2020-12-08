@@ -6,8 +6,12 @@ Salmon: rgb (240, 159, 156)
 Beige: rgb (255, 193, 160)
 Orange: rgb (254, 156, 127) */
 
+.profileContainer {
+  text-align: center;
+}
+
 .JournalContainer {
-background-color: rgb (255, 193, 160, 0);
+  background-color: rgb (255, 193, 160, 0);
 }
 
 .journalCard {
@@ -23,10 +27,11 @@ background-color: rgb (255, 193, 160, 0);
   color: #fe9c7f;
   padding: 50px;
 }
-.scrollHeader{
+.scrollHeader {
   position: sticky;
   top: 0;
-  width: 100%
+  width: 100%;
+  padding: 25px, 150px, 150px, 50px;
 }
 .btn-btn-secondary {
   background-color: transparent;
@@ -47,7 +52,7 @@ background-color: rgb (255, 193, 160, 0);
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 700px
+  height: 700px;
 }
 
 h1,
@@ -56,8 +61,15 @@ h2 {
   font-size: 48px;
 }
 
+p {
+  padding-right: 100px;
+}
 p,
 li,
 .lead {
   font-size: 24px;
+}
+
+.jumbotron-fluid {
+  padding: 25px, 50px, 50px, 50px;
 }
