@@ -16,7 +16,7 @@ Application is hosted on heroku at https://git.heroku.com/calm-castle-71189.git
 
 ### Usage:
 
-Select the Heroku link listed in the Installation section, above. In the Celestial Navigator browser page, the user may
+Select the Heroku link listed in the Installation section, above. In the Celestial Navigator browser page, the user may ...
 
 #### Usage pics:
 
