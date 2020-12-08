@@ -29,20 +29,17 @@ function App() {
     userEntries: []
   });
 
-  const {user, isAuthenticated, isLoading} = useAuth0();
-  console.log(user)
+  // const {user, isAuthenticated, isLoading} = useAuth0();
+  // console.log(user)
   
-  function getUserState() {
-    API.getUser(user.email).then(res =>{
-      setUserState(res)
-      console.log(userState)
-    })
-  }
+  // function getUserState() {
+  //   API.getUser(user.email).then(res =>{
+  //     setUserState(res)
+  //     console.log(userState)
+  //   })
+  // }
 
-<<<<<<< HEAD
-  isAuthenticated && (getUserState() )
-=======
-  getUserState()
+  // getUserState()
   // function getJournal(){
   //    //retrieve entries assigned to a user based on the userID variable in state
   //    //set state variable entries to the array of entries recieved back
@@ -55,7 +52,6 @@ function App() {
   console.log(event.target.title.value);
   console.log(event.target.message.value);
   };
->>>>>>> main
   return (
     <>
     <UserContext.Provider value={userState}>
