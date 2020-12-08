@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 import axios from 'axios';
 import UserContext from "./utils/userContext.js"
 import "./App.scss"
@@ -31,10 +31,10 @@ function App() {
     userEntries: []
   });
 
-  const {user, isAuthenticated, isLoading} = useAuth0(); 
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   function getUserState() {
-    API.getUser().then(res =>{
+    API.getUser().then(res => {
       setUserState(res)
     })
 
@@ -47,36 +47,40 @@ function App() {
   //    //retrieve entries assigned to a user based on the userID variable in state
   //    //set state variable entries to the array of entries recieved back
   // }
-//this is required to run the submit form page as a pop up module.
+  //this is required to run the submit form page as a pop up module.
   const triggerText = 'Open Form';
   const onSubmit = (event) => {
-  event.preventDefault(event);
- //consloe logs our respose now. needs to connect to backend...
-  console.log(event.target.title.value);
-  console.log(event.target.message.value);
+    event.preventDefault(event);
+    //consloe logs our respose now. needs to connect to backend...
+    console.log(event.target.title.value);
+    console.log(event.target.message.value);
   };
-  return (
-    <>
-    <UserContext.Provider value={userState}>
-    <Router>
-    <Navbar/>
-    <AuthProfile />
-    <div className="mainBody">
-    <div id="stars"></div>
-    <div id="stars2"> </div>
-    <div id="stars3"> </div>
-    <div id="title"></div>
-    <Route exact path="/" component = { Login } />
-    <Route exact path="/main" component = { Main } triggerText={triggerText} onSubmit={onSubmit}/>
-    <Route exact path="/profile" component = { Profile } />
-    <Route exact path="/journal" component = { JournalPage } />
-    <Route exact path="/resources" component = { Resources } />
-    <Route exact path="/edit" component = { CreateAccount } />
-    </div> 
-    </Router>
-    </UserContext.Provider>
-
-    </>
-  )
+  // if (isLoading) return <div>Loading</div>
+    return (
+      <div>
+        <UserContext.Provider value={userState}>
+          <Router>
+            <Navbar />
+            {/* <AuthProfile /> */}
+            <div className="mainBody">
+              <div id="stars"></div>
+              <div id="stars2"> </div>
+              <div id="stars3"> </div>
+              <div id="title"></div>
+              <Route exact path="/" component={Login} />
+              
+              <Route exact path="/main" component={Main} triggerText={triggerText} onSubmit={onSubmit} />
+              <Route exact path="/profile" component={Profile} />
+              <Route exact path="/journal" component={JournalPage} />
+              <Route exact path="/resources" component={Resources} />
+              <Route exact path="/edit" component={CreateAccount} />
+            </div>
+          </Router>
+        </UserContext.Provider>
+      </div>
+    )
+  
+  
 }
+
 export default App;
