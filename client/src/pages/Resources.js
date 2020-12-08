@@ -9,41 +9,71 @@ class Resources extends Component {
           <p style={{ color: "white" }}>
             <ul>
               <li>
-                <a href="https://astrolibrary.org/lessons/">Astro Library</a>{" "}
-                learn to read your own stars with this online beginners course.
+                <a href="https://www.absolutelyastrology.com/resources/">
+                  Absolutely Astrology
+                </a>
+                <p>Master your intuitive process, understand your Soul.</p>
+              </li>
+              <li>
+                <a href="https://astrolibrary.org/lessons/">Astro Library</a>
+                <p>
+                  Learn to read your own stars with this online beginners
+                  course.
+                </p>
               </li>
               <li>
                 <a href="https://astrologybytes.podbean.com/">
                   Astrology Bytes
                 </a>
-                The best podcast for astrology beginners.
+                <p>The best podcast for astrology beginners.</p>
+              </li>
+              <li>
+                <a href="https://cafeastrology.com/astrologyresources.html/">
+                  Cafe Astrology
+                </a>
+                <p>
+                  Astrology can be used as a powerful and fun tool for
+                  understanding ourselves, others, and the world around us.
+                </p>
+              </li>
+              <li>
+                <a href="https://jogleason.com/how-to-learn-astrology/">
+                  How to Learn Astrology
+                </a>
+                <p>Top 5 Tips, Books and Resources</p>
               </li>
               <li>
                 <a href="https://www.princeton.edu/~ezb/geomancy/geostep.html">
                   Medieval Geomancy
-                </a>{" "}
-                A fun and complex fortune telling system using dots on paper.
+                </a>
+                <p>
+                  A fun and complex fortune telling system using dots on paper.
+                </p>
               </li>
               <li>
-                <a href="https://sigilengine.com/">Sigil Engine</a> Make magical
-                works of art to represent your goals and wishes.
+                <a href="https://sigilengine.com/">Sigil Engine</a>{" "}
+                <p>
+                  Make magical works of art to represent your goals and wishes.
+                </p>
               </li>
               <li>
                 <a href="https://www.123test.com/personality-test/">
                   Big Five Personality Test
                 </a>{" "}
-                Take a scientifically validated personality test.
+                <p>Take a scientifically validated personality test.</p>
               </li>
               <li>
                 <a href="https://www.astrology.com/us/home.aspx">Astrology</a>{" "}
-                Choose your zodiac sign for a free daily horoscope.
+                <p>Choose your zodiac sign for a free daily horoscope.</p>
               </li>
               <li>
                 <a href="https://www.quantumrun.com/future-timeline/2021">
                   Qauntumrun
                 </a>{" "}
-                Don't believe in the zodiac? Take a look at some undisputeable
-                predictions for 2021.
+                <p>
+                  Don't believe in the zodiac? Take a look at some undisputeable
+                  predictions for 2021.
+                </p>
               </li>
             </ul>
           </p>
