@@ -23,7 +23,7 @@
   font-family: "EB Garamond", serif;
   font-size: 36px;
 }
-.profile {
+.profile, .resources  {
   color: #fe9c7f;
   font-size: 20px;
   padding-left: 0;

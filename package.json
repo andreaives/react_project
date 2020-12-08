@@ -30,10 +30,8 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "reactstrap": "^8.7.1"
-    //uncomment when deployed
-    // "proxy": "http://localhost:3000"   
   },
   "engines": {
     "node": "10.16.0"
-}
+  }
 }
