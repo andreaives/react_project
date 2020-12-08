@@ -2,26 +2,26 @@ import React, { useContext } from "react"
 import Form from "react-bootstrap/Form"
 import userContext from "../utils/userContext.js"
 import Navbar from "../components/navbar/Navbar"
+import Button from "react-bootstrap/Button"
 
 function CreateAccount(){
-  const {email} = useContext(userContext)
+  const {email, name, userBirthday, userBirthmonth} = useContext(userContext)
 
   return(
     <>
     <div>
     <Form className="editAccount">
       <Form.Group controlID="formEmail">
-        <Form.Label>I predict your Email Address is:</Form.Label>
+        <Form.Label>Email Address:</Form.Label>
         <Form.Control plaintext readOnly defaultValue={email} type="email" />
-        <Form.Text className="text-muted">If this is not your Gmail address please log out</Form.Text>
       </Form.Group>
       <Form.Group controlID="formName">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="string" placeholder="What should we call you?"/>
+        <Form.Control defaultValue={name} type="string" placeholder="What should we call you?"/>
       </Form.Group>
       <Form.Group controlID="monthDD">
         <Form.Label>Birth Month</Form.Label>
-        <Form.Control as="select">
+        <Form.Control as="select" defaultValue={userBirthmonth}>
           <option>January</option>
           <option>February</option>
           <option>March</option>
@@ -38,7 +38,7 @@ function CreateAccount(){
       </Form.Group>
       <Form.Group controlID="dayDD">
         <Form.Label>Birth Day</Form.Label>
-        <Form.Control as="select">
+        <Form.Control as="select" defaultValue={userBirthday}>
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -72,6 +72,7 @@ function CreateAccount(){
           <option>31</option>
         </Form.Control>
       </Form.Group>
+      <Button type="submit">Save</Button>
     </Form>
     </div>
     </>
