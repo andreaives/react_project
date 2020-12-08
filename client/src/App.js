@@ -10,6 +10,7 @@ import JournalPage from "./pages/Journal.js"
 import CreateAccount from "./pages/CreateAccount"
 import API from "./utils/API.js";
 import Login from "./pages/Login"
+import Resources from "./pages/Resources"
 import { useAuth0 } from "@auth0/auth0-react"
 import Navbar from "./components/navbar/Navbar"
 
@@ -64,12 +65,13 @@ function App() {
     <Route exact path="/main" component = { Main } triggerText={triggerText} onSubmit={onSubmit}/>
     <Route exact path="/profile" component = { Profile } />
     <Route exact path="/journal" component = { JournalPage } />
+    <Route exact path="/resources" component = { Resources } />
     <Route exact path="/edit" component = { CreateAccount } />
     </div> 
     </Router>
     </UserContext.Provider>
 
     </>
-   )
+  )
 }
 export default App;
