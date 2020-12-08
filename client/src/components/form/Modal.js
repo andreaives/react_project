@@ -33,7 +33,7 @@ return ReactDOM.createPortal(
     <span id="close-modal" className="_hide-visual">
     Return
     </span>
-    <span role="img" aria-lable="x">
+    <span role="img" aria-label="x">
     🐐	
     </span>
     </button>
