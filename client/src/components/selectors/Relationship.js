@@ -13,22 +13,26 @@ import { relationshipSeed } from "../../scripts/relationshipSeedDB";
 function status() {
   const Style = {
     title: {
-      textAlign: "center",
+      // paddingLeft: "60px",
       fontSize: "20px",
     },
     basicColors: {
       backgroundColor: "#280f36",
       color: "#fe9c7f",
       opacity: "0.9",
+      // textAlign: "center"
     },
     bodyStyle: {
-      textAlign: "center",
+      fontSize: "20px"
     },
     imageStyle: {
       height: "50%",
       width: "50%",
       margin: "auto",
     },
+    center: {
+      textAlign: "center"
+    }
   };
 
   const randomNumber = Math.floor(Math.random() * 5) + 1;
@@ -36,11 +40,11 @@ function status() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col style={Style.center}>
           <Card style={Style.basicColors}>
             <CardTitle style={Style.title}>Your 2021 Relationship Status</CardTitle>
-            <CardBody style={Style.bodyStyle}>{relationshipSeed[randomNumber].status}</CardBody>
             <CardImg src={relationshipSeed[randomNumber].image} style={Style.imageStyle}></CardImg>
+            <CardBody style={Style.bodyStyle}>{relationshipSeed[randomNumber].status}</CardBody>
           </Card>
         </Col>
       </Row>

@@ -16,7 +16,8 @@ function travel() {
   const Style = {
     title: {
       textAlign: "center",
-      fontSize: "30px"
+      fontSize: "30px",
+      // paddingLeft: "70px"
     },
     basicColors: {
       backgroundColor: "#280f36",
@@ -28,6 +29,9 @@ function travel() {
       width: "50%",
       margin: "auto",
     },
+    fontSize: {
+      fontSize: "20px"
+    }
   };
 
   return (
@@ -43,7 +47,7 @@ function travel() {
               src={destinationSeed[randomNumber].image}
               style={Style.imageStyle}
             ></CardImg>
-            <CardBody>
+            <CardBody style={Style.fontSize}>
               {destinationSeed[randomNumber].destination}
               <br />
               {destinationSeed[randomNumber].description}

@@ -73,7 +73,7 @@ h2 {
 }
 
 p,
-.card-title {
+.journalTitle, .journalData {
   padding-right: 100px;
   margin-left: 20px;
 }
