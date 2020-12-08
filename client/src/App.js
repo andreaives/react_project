@@ -31,17 +31,6 @@ function App() {
     userEntries: []
   });
 
-<<<<<<< HEAD
-  // const {user, isAuthenticated, isLoading} = useAuth0();
-  // console.log(user)
-  
-  // function getUserState() {
-  //   API.getUser(user.email).then(res =>{
-  //     setUserState(res)
-  //     console.log(userState)
-  //   })
-  // }
-=======
   const {user, isAuthenticated, isLoading} = useAuth0(); 
 
   function getUserState() {
@@ -50,7 +39,6 @@ function App() {
     })
 
   }
->>>>>>> main
 
   // getUserState()
   // function getJournal(){
