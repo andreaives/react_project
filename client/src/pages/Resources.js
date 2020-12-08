@@ -9,19 +9,38 @@ class Resources extends Component {
           <p style={{ color: "white" }}>
             <ul>
               <li>
-                <a href="https://astrolibrary.org/lessons/">Astro Library</a>{" "}
+                <a href="https://www.absolutelyastrology.com/resources/">
+                  Absolutely Astrology
+                </a>
+                Master your intuitive process, understand your Soul.
+              </li>
+              <li>
+                <a href="https://astrolibrary.org/lessons/">Astro Library</a>
                 learn to read your own stars with this online beginners course.
               </li>
               <li>
                 <a href="https://astrologybytes.podbean.com/">
                   Astrology Bytes
-                </a>{" "}
+                </a>
                 The best podcast for astrology beginners.
+              </li>
+              <li>
+                <a href="https://cafeastrology.com/astrologyresources.html/">
+                  Cafe Astrology
+                </a>
+                "Astrology can be used as a powerful and fun tool for
+                understanding ourselves, others, and the world around us."
+              </li>
+              <li>
+                <a href="https://jogleason.com/how-to-learn-astrology/">
+                  How to Learn Astrology
+                </a>
+                Top 5 Tips, Books and Resources
               </li>
               <li>
                 <a href="https://www.princeton.edu/~ezb/geomancy/geostep.html">
                   Medieval Geomancy
-                </a>{" "}
+                </a>
                 A fun and complex fortune telling system using dots on paper.
               </li>
               <li>
