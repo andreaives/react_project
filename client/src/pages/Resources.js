@@ -28,8 +28,8 @@ class Resources extends Component {
                 <a href="https://cafeastrology.com/astrologyresources.html/">
                   Cafe Astrology
                 </a>
-                "Astrology can be used as a powerful and fun tool for
-                understanding ourselves, others, and the world around us."
+                Astrology can be used as a powerful and fun tool for
+                understanding ourselves, others, and the world around us.
               </li>
               <li>
                 <a href="https://jogleason.com/how-to-learn-astrology/">
