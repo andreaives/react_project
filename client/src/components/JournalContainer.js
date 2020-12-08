@@ -6,7 +6,7 @@ import React, { useContext } from "react";
 // import UserContext from "../utils/userContext"
 import Card from "react-bootstrap/Card"
 import { journalData } from "../scripts/journalData.js"
-import Journal from './Journal/Journal'
+// import Journal from './Journal/Journal'
 
 function JournalContainer(){
   // const {entries} = useContext(UserContext)
