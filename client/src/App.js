@@ -14,6 +14,7 @@ import Resources from "./pages/Resources"
 import { useAuth0 } from "@auth0/auth0-react"
 import Navbar from "./components/navbar/Navbar"
 import AuthProfile from "./components/profile/AuthProfile"
+import {Redirect} from "react-router-dom"
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Col from "react-bootsrap/Col"
@@ -28,25 +29,27 @@ function App() {
     userFJob: "",
     userFRelationship: "",
     userFVacation: "",
-    userEntries: []
+    userEntries: [],
+    signedIn: false
   });
 
   const {user, isAuthenticated, isLoading} = useAuth0(); 
-
   function getUserState() {
     API.getUser().then(res =>{
       setUserState(res)
     })
-
   }
-
-
-  // getUserState()
-
-  // function getJournal(){
-  //    //retrieve entries assigned to a user based on the userID variable in state
-  //    //set state variable entries to the array of entries recieved back
+  // if (isLoading) {
+  //   return <div>Loading ...</div>;
   // }
+  // {isAuthenticated && (
+  //   setUserState({
+  //     email: user.email,
+  //     signedIn: true
+  //   })
+    
+  // )}
+
 //this is required to run the submit form page as a pop up module.
   const triggerText = 'Open Form';
   const onSubmit = (event) => {
@@ -60,18 +63,22 @@ function App() {
     <UserContext.Provider value={userState}>
     <Router>
     <Navbar/>
-    <AuthProfile />
+    {/* <AuthProfile /> */}
     <div className="mainBody">
     <div id="stars"></div>
     <div id="stars2"> </div>
     <div id="stars3"> </div>
     <div id="title"></div>
+    {/* <Route exact path="/">
+      {this.signedIn ? <Redirect to="/profile" /> : <Login />}
+    </Route> */}
     <Route exact path="/" component = { Login } />
     <Route exact path="/main" component = { Main } triggerText={triggerText} onSubmit={onSubmit}/>
     <Route exact path="/profile" component = { Profile } />
     <Route exact path="/journal" component = { JournalPage } />
     <Route exact path="/resources" component = { Resources } />
     <Route exact path="/edit" component = { CreateAccount } />
+    
     </div> 
     </Router>
     </UserContext.Provider>
