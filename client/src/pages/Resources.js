@@ -34,13 +34,13 @@ class Resources extends Component {
               <li>
                 <a href="https://jogleason.com/how-to-learn-astrology/">
                   How to Learn Astrology
-                </a>{" "}
+                </a>
                 Top 5 Tips, Books and Resources
               </li>
               <li>
                 <a href="https://www.princeton.edu/~ezb/geomancy/geostep.html">
                   Medieval Geomancy
-                </a>{" "}
+                </a>
                 A fun and complex fortune telling system using dots on paper.
               </li>
               <li>
@@ -58,3 +58,7 @@ class Resources extends Component {
 // examples:
 // - human body graph
 export default Resources;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 70098c4f14ae376d6cc20d17363d08a16d279fa3
