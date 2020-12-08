@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import axios from 'axios';
+import React, {useContext, useState} from "react";
 import UserContext from "./utils/userContext.js"
 import "./App.scss"
 import "./App.css"
@@ -15,8 +14,6 @@ import { useAuth0 } from "@auth0/auth0-react"
 import Navbar from "./components/navbar/Navbar"
 import AuthProfile from "./components/profile/AuthProfile"
 
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import Col from "react-bootsrap/Col"
 
 function App() {
   const [userState, setUserState] = useState({

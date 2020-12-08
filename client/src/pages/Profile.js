@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/Footer";
 import Button from "react-bootstrap/Button";
 import CreateAccount from "./CreateAccount.js";
 import AuthProfile from "../components/profile/AuthProfile";
-import Container from "react-bootstrap/esm/Container";
 import Travel from "../components/selectors/Travel"
 import Job from "../components/selectors/Job"
 import Status from "../components/selectors/Relationship"
