@@ -21,16 +21,11 @@ function JournalContainer() {
 }
 
 export function Journal(props) {
-  const Style = {
-    font: {
-      fontFamily: "EB Garamond, serif",
-    },
-  };
   return (
     <Card className="journalCard">
       {/* this is where we will recieve the data for the cards */}
-      <Card.Title style={Style.font}>{props.title}</Card.Title>
-      <Card.Title style={Style.font}>{props.date}</Card.Title>
+      <Card.Title>{props.title}</Card.Title>
+      <Card.Title>{props.date}</Card.Title>
       <Card.Text>{props.content}</Card.Text>
     </Card>
   );
