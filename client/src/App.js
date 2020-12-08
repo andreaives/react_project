@@ -19,10 +19,10 @@ import Navbar from "./components/navbar/Navbar"
 function App() {
   const [userState, setUserState] = useState({
     userID: "",
-    email: "testemail@email.com",
-    name: "TestName",
-    userBirthday: "15",
-    userBirthmonth: "July",
+    email: "",
+    name: "",
+    userBirthday: "",
+    userBirthmonth: "",
     userFJob: "",
     userFRelationship: "",
     userFVacation: "",
