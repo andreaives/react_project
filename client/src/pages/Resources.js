@@ -11,25 +11,25 @@ class Resources extends Component {
               <li>
                 <a href="https://www.absolutelyastrology.com/resources/">
                   Absolutely Astrology
-                </a>{" "}
+                </a>
                 Master your intuitive process, understand your Soul.
               </li>
               <li>
-                <a href="https://astrolibrary.org/lessons/">Astro Library</a>{" "}
+                <a href="https://astrolibrary.org/lessons/">Astro Library</a>
                 learn to read your own stars with this online beginners course.
               </li>
               <li>
                 <a href="https://astrologybytes.podbean.com/">
                   Astrology Bytes
-                </a>{" "}
+                </a>
                 The best podcast for astrology beginners.
               </li>
               <li>
                 <a href="https://cafeastrology.com/astrologyresources.html/">
                   Cafe Astrology
-                </a>{" "}
-                "Astrology can be used as a powerful and fun tool for
-                understanding ourselves, others, and the world around us."
+                </a>
+                Astrology can be used as a powerful and fun tool for
+                understanding ourselves, others, and the world around us.
               </li>
               <li>
                 <a href="https://jogleason.com/how-to-learn-astrology/">
@@ -47,6 +47,23 @@ class Resources extends Component {
                 <a href="https://sigilengine.com/">Sigil Engine</a> Make magical
                 works of art to represent your goals and wishes.
               </li>
+              <li>
+                <a href="https://www.123test.com/personality-test/">
+                  Big Five Personality Test
+                </a>{" "}
+                Take a scientifically validated personality test.
+              </li>
+              <li>
+                <a href="https://www.astrology.com/us/home.aspx">Astrology</a>{" "}
+                Choose your zodiac sign for a free daily horoscope.
+              </li>
+              <li>
+                <a href="https://www.quantumrun.com/future-timeline/2021">
+                  Qauntumrun
+                </a>{" "}
+                Don't believe in the zodiac? Take a look at some undisputeable
+                predictions for 2021.
+              </li>
             </ul>
           </p>
         </div>
@@ -58,7 +75,3 @@ class Resources extends Component {
 // examples:
 // - human body graph
 export default Resources;
-<<<<<<< HEAD
-=======
-
->>>>>>> 70098c4f14ae376d6cc20d17363d08a16d279fa3
