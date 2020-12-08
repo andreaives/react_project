@@ -4,7 +4,7 @@ import LoginButton from "../components/loginButton/LoginButton"
 import Navbar from "../components/navbar/Navbar.js"
 
 function LoginPage() {
-
+// console.log( user)
   return(
     <>
       <div>
