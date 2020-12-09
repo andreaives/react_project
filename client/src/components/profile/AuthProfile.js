@@ -11,7 +11,7 @@ const AuthProfile = () => {
       <img src={ user.picture} alt= { user.name}/>
       <h2> {user.name}</h2>
       <p>{ user.email} </p>
-      // {JSON.stringify(user, null, 2)}
+      {/* {JSON.stringify(user, null, 2)} */}
     </div>
   )
   )

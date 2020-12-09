@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer";
 import JournalContainer from "../components/JournalContainer";
 
