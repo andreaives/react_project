@@ -15,8 +15,6 @@ import Navbar from "./components/navbar/Navbar"
 import AuthProfile from "./components/profile/AuthProfile"
 import { Auth0Provider } from '@auth0/auth0-react'
 
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import Col from "react-bootsrap/Col"
 
 function App() {
   const [userState, setUserState] = useState({
@@ -28,28 +26,22 @@ function App() {
     userFJob: "",
     userFRelationship: "",
     userFVacation: "",
-    userEntries: [],
-    signedIn: false
+    userEntries: []
   });
 
-  const {user, isAuthenticated} = useAuth0(); 
-  const email = user
-  console.log(email)
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
   function getUserState() {
-    API.getUser(email).then(res =>{
+    API.getUser().then(res => {
       setUserState(res)
     })
+
   }
-  getUserState()
-  //this is required to run the submit form page as a pop up module.
-  const onSubmit = (event) => {
-  event.preventDefault();
- //consloe logs our respose now. needs to connect to backend...
   function createUser() {
     {isAuthenticated && (
     setUserState({email: email})
     )}
-  }}
+  }
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
   {console.log(userState)}
@@ -74,7 +66,7 @@ function App() {
     redirectUri={"http://localhost:3000/main"}>
     <Router>
     <Navbar/>
-    {/* <AuthProfile /> */}
+    <AuthProfile />
     <div className="mainBody">
     <div id="stars"></div>
     <div id="stars2"> </div>
@@ -86,7 +78,6 @@ function App() {
     <Route exact path="/journal" component = { JournalPage } />
     <Route exact path="/resources" component = { Resources } />
     <Route exact path="/edit" component = { CreateAccount } />
-    
     </div> 
     </Router>
     </Auth0Provider>
@@ -94,6 +85,6 @@ function App() {
 
     </>
   )
-  
 }
+
 export default App;

@@ -42,28 +42,28 @@ class Aztro extends Component {
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Aries")}
                 >
-                  ♈ Aries
+                  <span role="img" aria-label="astrological sign">♈ Aries</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Taurus")}
                 >
-                  ♉ Taurus
+                  <span role="img" aria-label="astrological sign">♉ Taurus</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Gemini")}
                 >
-                  ♊ Gemini
+                  <span role="img" aria-label="astrological sign">♊ Gemini</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Cancer")}
                 >
-                  ♋ Cancer
+                  <span role="img" aria-label="astrological sign">♋ Cancer</span>
                 </button>
               </div>
               <br />
@@ -77,28 +77,28 @@ class Aztro extends Component {
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Leo")}
                 >
-                  ♌ Leo
+                  <span role="img" aria-label="astrological sign">♌ Leo</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Virgo")}
                 >
-                  ♍ Virgo
+                  <span role="img" aria-label="astrological sign">♍ Virgo</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Libra")}
                 >
-                  ♎ Libra
+                  <span role="img" aria-label="astrological sign">♎ Libra</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Scorpio")}
                 >
-                  ♏ Scorpio
+                  <span role="img" aria-label="astrological sign">♏ Scorpio</span>
                 </button>
               </div>
               <br />
@@ -112,28 +112,28 @@ class Aztro extends Component {
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Sagittarius")}
                 >
-                  ♐ Sagittarius
+                  <span role="img" aria-label="astrological sign">♐ Sagittarius</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Capricorn")}
                 >
-                  ♑ Capricorn
+                  <span role="img" aria-label="astrological sign">♑ Capricorn</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Aquarius")}
                 >
-                  ♒ Aquarius
+                  <span role="img" aria-label="astrological sign">♒ Aquarius</span>
                 </button>
                 <button
                   type="button"
                   className="btn-btn-secondary"
                   onClick={() => this.fetchScope("Pisces")}
                 >
-                  ♓ Pisces
+                  <span role="img" aria-label="astrological sign">♓ Pisces</span>
                 </button>
               </div>
             </div>
