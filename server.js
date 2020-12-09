@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 3001;
 require('./database');
 
 // API
-const users = require('/api/users');
-app.use('/api/users', users);
-const entries = require('/api/entry')
-app.use('/api/entry', entries)
+// const users = require('/api/users');
+// app.use('/api/users', users);
+// const entries = require('/api/entry')
+// app.use('/api/entry', entries)
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -24,15 +24,21 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/celestial-navigator',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-  }
-);
+// const mongoose = require('mongoose');
+const connection = "mmongodb+srv://Madeline:Cowell@cluster0.bsnva.mongodb.net/celestial-navigator?retryWrites=true&w=majorityongodb+srv://username:<password>@<cluster>/<database>?retryWrites=true&w=majority";
+mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+    .then(() => console.log("Database Connected Successfully"))
+    .catch(err => console.log(err));
+
+// mongoose.connect(
+//   process.env.MONGODB_URI || 'mongodb://localhost/celestial-navigator',
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false
+//   }
+// );
 
 // Start the API server
 app.listen(PORT, function() {

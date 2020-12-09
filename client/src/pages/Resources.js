@@ -51,29 +51,27 @@ class Resources extends Component {
                 </p>
               </li>
               <li>
-                <a href="https://sigilengine.com/">Sigil Engine</a>{" "}
+                <a href="https://sigilengine.com/">Sigil Engine</a>
                 <p>
                   Make magical works of art to represent your goals and wishes.
                 </p>
               </li>
               <li>
-                <a href="https://www.123test.com/personality-test/">
+                <a href="https://www.123test.com/personality-test/" target='_blank' rel="noopener noreferrer">
                   Big Five Personality Test
-                </a>{" "}
-                <p>Take a scientifically validated personality test.</p>
+                </a>
+                Take a scientifically validated personality test.
               </li>
               <li>
-                <a href="https://www.astrology.com/us/home.aspx">Astrology</a>{" "}
-                <p>Choose your zodiac sign for a free daily horoscope.</p>
+                <a href="https://www.astrology.com/us/home.aspx" target='_blank' rel="noopener noreferrer">Astrology</a>
+                Choose your zodiac sign for a free daily horoscope.
               </li>
               <li>
-                <a href="https://www.quantumrun.com/future-timeline/2021">
+                <a href="https://www.quantumrun.com/future-timeline/2021" target='_blank' rel="noopener noreferrer" >
                   Qauntumrun
-                </a>{" "}
-                <p>
-                  Don't believe in the zodiac? Take a look at some undisputeable
-                  predictions for 2021.
-                </p>
+                </a>
+                Don't believe in the zodiac? Take a look at some undisputeable
+                predictions for 2021.
               </li>
             </ul>
           </p>

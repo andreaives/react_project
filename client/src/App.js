@@ -31,17 +31,17 @@ function App() {
 
   const { user, isAuthenticated, isLoading } = useAuth0();
 
-  function getUserState() {
-    API.getUser().then(res => {
-      setUserState(res)
-    })
+  // function getUserState() {
+  //   API.getUser().then(res => {
+  //     setUserState(res)
+  //   })
 
-  }
-  function createUser() {
-    {isAuthenticated && (
-    setUserState({email: email})
-    )}
-  }
+  // }
+  // function createUser() {
+  //   {isAuthenticated && (
+  //   setUserState({email: email})
+  //   )}
+  // }
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
   {console.log(userState)}
