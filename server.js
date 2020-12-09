@@ -10,6 +10,8 @@ require('./database');
 // API
 const users = require('/api/users');
 app.use('/api/users', users);
+const entries = require('/api/entry')
+app.use('/api/entry', entries)
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
