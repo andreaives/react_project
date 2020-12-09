@@ -42,7 +42,6 @@ function App() {
   }
   getUserState()
   //this is required to run the submit form page as a pop up module.
-  const triggerText = 'Open Form';
   const onSubmit = (event) => {
   event.preventDefault();
  //consloe logs our respose now. needs to connect to backend...
@@ -50,7 +49,7 @@ function App() {
     {isAuthenticated && (
     setUserState({email: email})
     )}
-  }
+  }}
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
   {console.log(userState)}
@@ -95,6 +94,6 @@ function App() {
 
     </>
   )
-  }
+  
 }
 export default App;

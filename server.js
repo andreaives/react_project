@@ -3,13 +3,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 require('./database');
 
 // API
 const users = require('/api/users');
 app.use('/api/users', users);
+const entries = require('/api/entry')
+app.use('/api/entry', entries)
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

@@ -1,4 +1,4 @@
-const db = require("../models/Entry.js");
+const db = require("../models");
 
 // Defining methods for the entryController
 module.exports = {

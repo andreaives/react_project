@@ -20,8 +20,9 @@ const entrySubmit = event => {
 
   const entry = {
     title: entrytitle,
-    message: entrymessage,
-    author: author
+    author: author,
+    message: entrymessage
+    
   }
   console.log(entry)
   saveEntry(entry)
