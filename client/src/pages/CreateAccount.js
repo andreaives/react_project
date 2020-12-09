@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import Form from "react-bootstrap/Form"
 import userContext from "../utils/userContext.js"
-import Navbar from "../components/navbar/Navbar"
 import Button from "react-bootstrap/Button"
 
 function CreateAccount(){
