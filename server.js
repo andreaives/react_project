@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3001;
 require('./database');
 
 // API
-const users = require('/api/users');
-app.use('/api/users', users);
+// const users = require('/api/users');
+// app.use('/api/users', users);
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
+app.post()
 
 // Connect to the Mongo DB
 mongoose.connect(
