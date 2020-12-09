@@ -1,6 +1,6 @@
 import React from 'react';
+import API from '../../utils/API.js';
 import "./Form.css"
-import API from '../../utils/API'
 
 function saveEntry(){
   API.saveEntry()
@@ -17,10 +17,12 @@ const entrySubmit = event => {
   const entrytitle = event.target.jtitle.value
   const entrymessage = event.target.message.value
   const author = "" 
+
   const entry = {
     title: entrytitle,
-    message: entrymessage,
-    author: author
+    author: author,
+    message: entrymessage
+    
   }
   console.log(entry)
   saveEntry(entry)
