@@ -20,19 +20,19 @@ Select the Heroku link listed in the Installation section, above. In the Celesti
 
 #### Usage pics:
 
-![home](./images/home)
+![home](./images/home.png)
 
 ##### Profile:
 
-![profile](./images/profile)
+![profile](./images/profile.png)
 
 ##### Journal Entry:
 
-![journal](./images/journal)
+![journal](./images/journal.png)
 
 ##### Resources:
 
-![resources](./images/resources)
+![resources](./images/resources.png)
 
 ### License:
 
