@@ -9,7 +9,12 @@ Orange: rgb (254, 156, 127) */
 .profileContainer {
   text-align: center;
 }
-
+.newEntryBtn{
+  float: right
+}
+.journalHead{
+  width: 80%;
+}
 .JournalContainer {
   background-color: rgb (255, 193, 160, 0);
 }
