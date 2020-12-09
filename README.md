@@ -4,7 +4,7 @@
 
 ## Info:
 
-Search for your ...
+Search for your horoscope, enter your thoughts and feelings, find out your job, relationship status, and vacation destination for 2021 all on one site.
 
 ## Table of Contents
 
@@ -16,23 +16,23 @@ Application is hosted on heroku at https://git.heroku.com/calm-castle-71189.git
 
 ### Usage:
 
-Select the Heroku link listed in the Installation section, above. In the Celestial Navigator browser page, the user may ...
+Select the Heroku link listed in the Installation section, above. In the Celestial Navigator log-in browser page, the user will select the button to log-in with their Google account or sign-up. Once signed-in, the Profile page will appear showing the user's future job, relationship status and vacation destination in 2021. Also on the Profile page, the user may chose to edit their profile by modifying their name and adding their birth month and date to refine their 2021 prediction. On the Home Page, Celestial Navigator, the user may view their daily horoscope, by selecting their zodiac sign, and view and post to their personal Journal. When the user selects the New Entry button, they can enter a new journal entry at the bottom of the page. In addition, the user may view their journal entries on the Journal page and find additional information on the Resources page.
 
 #### Usage pics:
 
-![open](./)
+![home](./components/images/home)
 
-##### Search:
+##### Profile:
 
-![search](./)
+![profile](./components/images/profile)
 
-##### CRUD:
+##### Journal Entry:
 
-![tableUsage](./)
+![journal](./components/images/journal)
 
-##### Chat:
+##### Resources:
 
-![chat](./)
+![resources](./components/images/resources)
 
 ### License:
 
