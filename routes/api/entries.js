@@ -2,7 +2,7 @@ const router = require("express").Router();
 const entryController = require("../../controllers/entryController");
 
 // Matches with "/api/entries"
-router.route("api/entry:id")
+router.route("api/entry")
   .get(entryController.findAll)
   .post(entryController.create);
 
